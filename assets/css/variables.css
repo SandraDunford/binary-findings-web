@@ -1,0 +1,94 @@
+/* ==========================================
+   Binary Findings Design System
+   variables.css
+   Version 1.0
+========================================== */
+
+:root {
+
+    /* ======================================
+       Brand Colours
+    ====================================== */
+
+    --primary: #2F3E9E;
+    --secondary: #495057;
+    --accent: #C58A2A;
+
+    --white: #FFFFFF;
+
+    --background: #FFFFFF;
+    --background-light: #F8F9FA;
+
+    --text: #212529;
+    --text-light: #6C757D;
+
+    --border: #DEE2E6;
+
+    /* ======================================
+       Typography
+    ====================================== */
+
+    --font-heading: "Manrope", sans-serif;
+    --font-body: "Inter", sans-serif;
+
+    /* ======================================
+       Font Sizes
+    ====================================== */
+
+    --fs-xs: 0.75rem;
+    --fs-sm: 0.875rem;
+    --fs-base: 1rem;
+    --fs-lg: 1.125rem;
+    --fs-xl: 1.375rem;
+    --fs-2xl: 2rem;
+    --fs-3xl: 2.75rem;
+
+    /* ======================================
+       Font Weights
+    ====================================== */
+
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-semibold: 600;
+    --fw-bold: 700;
+
+    /* ======================================
+       Spacing
+    ====================================== */
+
+    --space-xs: 0.5rem;
+    --space-sm: 1rem;
+    --space-md: 1.5rem;
+    --space-lg: 2.5rem;
+    --space-xl: 4rem;
+    --space-2xl: 6rem;
+
+    /* ======================================
+       Border Radius
+    ====================================== */
+
+    --radius-sm: 6px;
+    --radius-md: 12px;
+    --radius-lg: 20px;
+    --radius-pill: 999px;
+
+    /* ======================================
+       Shadows
+    ====================================== */
+
+    --shadow-sm: 0 2px 8px rgba(0,0,0,.08);
+    --shadow-md: 0 6px 18px rgba(0,0,0,.12);
+    --shadow-lg: 0 12px 30px rgba(0,0,0,.16);
+
+    /* ======================================
+       Layout
+    ====================================== */
+
+    --container-width: 1200px;
+
+    /* ======================================
+       Animation
+    ====================================== */
+
+    --transition: 0.25s ease;
+}

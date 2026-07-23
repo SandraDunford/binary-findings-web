@@ -1,0 +1,1243 @@
+/* ==========================================
+   Meet The Data Matron
+   data-matron.css
+========================================== */
+
+
+/* ==========================================
+   PAGE DEFAULTS
+========================================== */
+
+.data-matron-page section {
+
+    padding: 5rem 0;
+
+}
+
+
+/* ==========================================
+   HERO
+========================================== */
+
+.matron-hero{
+    width:100%;
+    text-align:center;
+    background:#fff; /* or your page background */
+}
+
+.matron-hero img{
+    width:90%;
+    max-width:1800px;
+    height:auto;
+    display:block;
+    margin:0 auto;
+}
+
+
+/* ==========================================
+   INTRODUCTION
+========================================== */
+
+.matron-introduction {
+
+    background: var(--background);
+
+}
+
+.section-heading {
+
+    text-align: center;
+    margin-bottom: 4rem;
+
+}
+
+.section-heading h2 {
+
+    color: var(--primary);
+    margin-bottom: 0.75rem;
+
+}
+
+.section-subtitle {
+
+    font-size: 1.2rem;
+    color: var(--text-light);
+
+}
+
+.intro-content {
+
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    gap: 4rem;
+    align-items: center;
+    margin-bottom: 5rem;
+
+}
+
+/* ==========================================
+   INTRO PORTRAIT IMAGE & TEXT
+========================================== */
+
+.intro-image{
+
+    text-align:center;
+
+}
+
+.portrait-wrapper{
+
+    position:relative;
+
+    display:inline-block;
+
+    margin-bottom:1.75rem;
+
+}
+
+.portrait-wrapper::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:100%;
+
+    height:100%;
+
+    background:var(--accent);
+
+    top:18px;
+
+    left:18px;
+
+    border-radius:24px;
+
+    z-index:0;
+
+}
+
+.portrait-wrapper img{
+
+    position:relative;
+
+    z-index:1;
+
+    width:100%;
+
+    max-width:340px;
+
+    border-radius:24px;
+
+    display:block;
+
+    box-shadow:0 25px 50px rgba(0,0,0,.18);
+
+}
+
+.portrait-details h3{
+
+    color:var(--primary);
+
+    margin-bottom:.5rem;
+
+}
+
+.postnominals{
+
+    font-weight:600;
+
+    color:var(--secondary);
+
+    margin-bottom:1.25rem;
+
+}
+
+.profile-titles{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:.75rem;
+
+    flex-wrap:wrap;
+
+}
+
+.profile-titles span{
+
+    border:1px solid var(--accent);
+
+    color:var(--primary);
+
+    padding:.45rem 1rem;
+
+    border-radius:999px;
+
+    font-weight:600;
+
+    background:white;
+
+}
+
+.profile-tagline{
+
+    margin-top:2rem;
+
+    padding-top:1rem;
+
+    border-top:2px solid var(--accent);
+
+    color:var(--primary);
+
+    font-size:1.15rem;
+
+    font-style:italic;
+
+    line-height:1.7;
+
+}
+
+.intro-image img {
+
+    width: 100%;
+    max-width: 340px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+
+}
+
+.intro-text p {
+
+    margin-bottom: 1rem;
+
+    font-size: 1.08rem;
+
+    line-height: 1.8;
+
+    max-width: 900px;
+
+}
+
+.intro-text .btn-primary {
+
+    margin-top: 1rem;
+
+}
+
+/* ==========================================
+   SIX PILLARS
+========================================== */
+
+.pillar-grid {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: stretch;
+
+    gap: 1rem;
+
+    margin: 3rem auto 5rem;
+
+    flex-wrap: nowrap;
+
+}
+
+/* Individual Pillar */
+
+.pillar-card {
+
+    width: 180px;
+
+    min-height: 155px;
+
+    padding: 1.2rem;
+
+    border-radius: 18px;
+
+    text-align: center;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    transition: 0.25s ease;
+
+    flex-shrink: 0;
+
+}
+
+.pillar-card:hover {
+
+    transform: translateY(-8px);
+
+}
+
+/* Icon Container */
+
+.pillar-icon {
+
+    width: 58px;
+
+    height: 58px;
+
+    margin-bottom: 0.9rem;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+}
+
+/* Icon */
+
+.pillar-icon img {
+
+    width: 30px;
+
+    height: 30px;
+
+}
+
+/* Heading */
+
+.pillar-card h3 {
+
+    font-size: 1rem;
+
+    line-height: 1.35;
+
+    margin: 0;
+
+    color: var(--primary);
+
+}
+
+/* ==========================================
+   PILLAR COLOURS
+========================================== */
+
+.clinical {
+
+    background: #EEF5FF;
+
+}
+
+.clinical .pillar-icon {
+
+    background: #D6E7FF;
+
+}
+
+.leadership {
+
+    background: #F1F0FF;
+
+}
+
+.leadership .pillar-icon {
+
+    background: #DDD9FF;
+
+}
+
+.research {
+
+    background: #EEF9F8;
+
+}
+
+.research .pillar-icon {
+
+    background: #D6F2EF;
+
+}
+
+.improvement {
+
+    background: #F5FAEE;
+
+}
+
+.improvement .pillar-icon {
+
+    background: #E2F0CE;
+
+}
+
+.assurance {
+
+    background: #FFF8ED;
+
+}
+
+.assurance .pillar-icon {
+
+    background: #FFE8BF;
+
+}
+
+.engineering {
+
+    background: #F4F3FF;
+
+}
+
+.engineering .pillar-icon {
+
+    background: #DDD8FF;
+
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 1200px) {
+
+    .pillar-grid {
+
+        flex-wrap: wrap;
+
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .pillar-grid {
+
+        justify-content: center;
+
+    }
+
+}
+/* ==========================================
+   PROFILE CARD
+========================================== */
+
+.profile-card{
+
+    background:white;
+
+    padding:2rem;
+
+    border-radius:18px;
+
+    margin-top:1.5rem;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+    border:1px solid var(--border);
+
+}
+
+.profile-card h3{
+
+    color:var(--primary);
+
+    margin-bottom:.5rem;
+
+}
+
+.postnominals{
+
+    color:var(--secondary);
+
+    font-weight:600;
+
+    margin-bottom:1rem;
+
+}
+
+.profile-titles{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:.75rem;
+
+    flex-wrap:wrap;
+
+    margin-top:1rem;
+
+}
+
+.profile-titles span{
+
+    display:inline-block;
+
+    background:var(--background-light);
+
+    padding:.45rem 1rem;
+
+    border-radius:999px;
+
+    width:fit-content;
+
+    font-weight:600;
+
+}
+
+.profile-tagline{
+
+    margin-top:1.5rem;
+
+    padding-top:.85rem;
+
+    border-top:2px solid var(--accent);
+
+    font-style:italic;
+
+}
+
+.skill-badges{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:.85rem;
+
+    margin-top:1.5rem;
+
+    justify-content:flex-start;
+
+}
+
+.skill-badges span{
+
+    background:var(--background);
+
+    color:var(--primary);
+
+    border:1px solid var(--primary);
+
+    border-radius:999px;
+
+    padding:.40rem .9rem;
+
+    font-weight:600;
+
+    transition:.25s;
+
+}
+
+.skill-badges span:hover{
+
+    background:var(--primary);
+
+    color:white;
+
+}
+
+/* ==========================================
+   WHY THIS MATTERS
+========================================== */
+
+.why-matters{
+
+    background:white;
+
+    padding-top: 1rem;
+
+    padding-bottom: 3rem;
+
+}
+
+.why-grid{
+
+    display:grid;
+
+    grid-template-columns:1.15fr 460px;
+
+    gap:5rem;
+
+    align-items:center;
+
+}
+
+.why-text p{
+
+    margin-bottom:1.8rem;
+
+    line-height:1.9;
+
+    font-size:1.08rem;
+
+}
+
+.journey-card{
+
+    background:var(--background);
+
+    border-radius:24px;
+
+    padding:2.5rem;
+
+    box-shadow:0 20px 40px rgba(0,0,0,.08);
+
+    border-top:6px solid var(--accent);
+
+}
+
+.journey-card h3{
+
+    text-align:center;
+
+    color:var(--primary);
+
+    margin-bottom:2rem;
+
+}
+
+.journey-step{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:1rem;
+
+}
+
+.journey-step span{
+
+    width:42px;
+
+    height:42px;
+
+    border-radius:50%;
+
+    background:var(--primary);
+
+    color:white;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-weight:700;
+
+    flex-shrink:0;
+
+}
+
+.journey-step p{
+
+    margin:0;
+
+    font-weight:600;
+
+    color:var(--primary);
+
+}
+
+.journey-arrow{
+
+    text-align:center;
+
+    font-size:1.5rem;
+
+    color:var(--accent);
+
+    margin:.6rem 0;
+
+}
+
+.journey-step.final span{
+
+    background:var(--accent);
+
+}
+
+@media (max-width:992px){
+
+    .why-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .journey-card{
+
+        margin-top:2rem;
+
+    }
+
+}
+
+/* ==========================================
+   CAREER JOURNEY
+========================================== */
+
+/* ==========================================
+   CAREER JOURNEY
+========================================== */
+
+.career-journey{
+
+    background:var(--background);
+
+    padding:8rem 0;
+
+}
+
+.timeline{
+
+    position:relative;
+
+    max-width:900px;
+
+    margin:0 auto;
+
+}
+
+.timeline::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:34px;
+
+    top:0;
+
+    bottom:0;
+
+    width:3px;
+
+    background:var(--border);
+
+}
+
+.timeline-item{
+
+    display:flex;
+
+    gap:2rem;
+
+    margin-bottom:3rem;
+
+    position:relative;
+
+}
+
+.timeline-marker{
+
+    width:70px;
+
+    height:70px;
+
+    border-radius:50%;
+
+    background:white;
+
+    border:3px solid var(--accent);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    flex-shrink:0;
+
+    z-index:2;
+
+}
+
+.timeline-marker img{
+
+    width:34px;
+
+    height:34px;
+
+}
+
+.timeline-marker.final{
+
+    background:var(--primary);
+
+    border-color:var(--primary);
+
+}
+
+.timeline-content{
+
+    flex:1;
+
+    background:white;
+
+    padding:2rem;
+
+    border-radius:20px;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.06);
+
+}
+
+.timeline-content h3{
+
+    margin-bottom:.4rem;
+
+    color:var(--primary);
+
+}
+
+.timeline-tagline{
+
+    color:var(--accent);
+
+    font-weight:600;
+
+    margin-bottom:1rem;
+
+}
+
+.timeline-content p:last-child{
+
+    margin:0;
+
+    line-height:1.8;
+
+    color:var(--text);
+
+}
+
+.timeline-item:last-child{
+
+    margin-bottom:0;
+
+}
+
+@media (max-width:768px){
+
+    .timeline::before{
+
+        left:24px;
+
+    }
+
+    .timeline-marker{
+
+        width:50px;
+        height:50px;
+
+    }
+
+    .timeline-marker img{
+
+        width:24px;
+        height:24px;
+
+    }
+
+    .timeline-item{
+
+        gap:1rem;
+
+    }
+
+    .timeline-content{
+
+        padding:1.5rem;
+
+    }
+
+}
+/* ==========================================
+   FEATURED PROJECT
+========================================== */
+
+/* ==========================================
+   FEATURED PROJECT
+========================================== */
+
+.featured-project{
+
+    background:white;
+
+    padding:2rem 0;
+
+}
+
+.project-showcase{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:4rem;
+
+    align-items:center;
+
+}
+
+/* ---------- IMAGE ---------- */
+
+.project-image img{
+
+    width:100%;
+
+    border-radius:24px;
+
+    box-shadow:0 20px 45px rgba(0,0,0,.10);
+
+}
+
+/* ---------- CONTENT ---------- */
+
+.project-label{
+
+    display:inline-block;
+
+    background:#EEF5FF;
+
+    color:var(--primary);
+
+    padding:.45rem 1rem;
+
+    border-radius:999px;
+
+    font-size:.9rem;
+
+    font-weight:600;
+
+    margin-bottom:1rem;
+
+}
+
+.project-content h3{
+
+    color:var(--primary);
+
+    margin-bottom:1.25rem;
+
+}
+
+.project-content p{
+
+    margin-bottom:1.5rem;
+
+    line-height:1.8;
+
+}
+
+/* ---------- TECHNOLOGIES ---------- */
+
+.project-tech{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:.75rem;
+
+    margin:2rem 0;
+
+}
+
+.project-tech span{
+
+    border:1px solid var(--primary);
+
+    border-radius:999px;
+
+    padding:.45rem .9rem;
+
+    font-size:.9rem;
+
+    font-weight:600;
+
+    color:var(--primary);
+
+}
+
+/* ---------- BUTTONS ---------- */
+
+.project-buttons{
+
+    display:flex;
+
+    gap:1rem;
+
+    flex-wrap:wrap;
+
+    margin-top:2rem;
+
+}
+
+/* ---------- MOBILE ---------- */
+
+@media (max-width:992px){
+
+    .project-showcase{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+/* ==========================================
+   LET'S START A CONVERSATION
+========================================== */
+
+.matron-cta{
+
+    padding:8rem 0;
+
+    background:white;
+
+}
+
+.cta-panel{
+
+    background:linear-gradient(135deg,var(--primary),#4456b7);
+
+    border-radius:24px;
+
+    padding:3rem 3.5rem;
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr 1fr;
+
+    align-items:center;
+
+    column-gap:3rem;
+
+}
+
+.cta-content{
+
+    max-width:none;
+
+}
+
+.cta-content h2{
+
+    color:white;
+
+    margin-bottom:1rem;
+
+}
+
+.cta-content p{
+
+    color:white;
+
+    line-height:1.8;
+
+    margin:0;
+
+    opacity:.95;
+
+}
+
+.cta-buttons{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:1rem;
+
+}
+
+.matron-cta .btn-primary,
+.matron-cta .btn-secondary{
+
+    width:240px;
+
+    text-align:center;
+
+}
+
+.matron-cta .btn-primary{
+
+    background:white;
+
+    color:var(--primary);
+
+    border:2px solid white;
+
+    min-width:250px;
+
+    text-align:center;
+
+}
+
+.matron-cta .btn-primary:hover{
+
+    background:var(--accent);
+
+    border-color:var(--accent);
+
+    color:white;
+
+}
+
+.matron-cta .btn-secondary{
+
+    background:transparent;
+
+    color:white;
+
+    border:2px solid white;
+
+    min-width:250px;
+
+    text-align:center;
+
+}
+
+.matron-cta .btn-secondary:hover{
+
+    background:white;
+
+    color:var(--primary);
+
+}
+
+/* ==========================================
+   PROFESSIONAL LINKS
+========================================== */
+
+.profile-links{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+}
+
+.profile-links p{
+
+    margin-bottom:1rem;
+
+    color:white;
+
+    font-weight:600;
+
+}
+
+.profile-icons{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:1rem;
+
+}
+
+.profile-icons a{
+
+    width:58px;
+
+    height:58px;
+
+    background:white;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    transition:.25s ease;
+
+}
+
+.profile-icons a:hover{
+
+    transform:translateY(-5px);
+
+}
+
+.profile-icons img{
+
+    width:28px;
+
+    height:28px;
+
+    object-fit:contain;
+
+}
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width:900px){
+
+    .cta-panel{
+
+        grid-template-columns:1fr;
+
+        row-gap:2rem;
+
+        text-align:center;
+
+    }
+
+}
+
+
+
+/* ==========================================
+   CALL TO ACTION
+========================================== */
+
+
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width:1100px) {
+
+
+
+}
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width:768px) {
+
+
+
+}

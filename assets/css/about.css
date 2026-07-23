@@ -1,0 +1,615 @@
+/* ==========================================
+   Meet The Data Matron
+   data-matron.css
+========================================== */
+
+
+/* ==========================================
+   PAGE DEFAULTS
+========================================== */
+
+.data-matron-page section {
+
+    padding: 5rem 0;
+
+}
+
+
+/* ==========================================
+   HERO
+========================================== */
+
+
+
+/* ==========================================
+   ABOUT INTRODUCTION
+========================================== */
+
+
+
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width:1100px){
+
+.about-intro-grid{
+
+    grid-template-columns:1fr;
+    text-align:center;
+}
+
+.about-copy h1,
+.about-copy p{
+
+    max-width:none;
+}
+
+}
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width:768px){
+
+.about-intro{
+
+    padding:4rem 0;
+}
+
+.about-intro-grid{
+
+    gap:3rem;
+}
+
+}
+
+
+
+/* ==========================================
+   WE BRIDGE THE GAP
+========================================== */
+
+.bridge-section{
+
+    padding:2rem 0;
+}
+
+.section-heading{
+
+    text-align:center;
+    max-width:720px;
+    margin:0 auto 4rem;
+}
+
+.bridge-layout{
+
+    display:grid;
+    grid-template-columns:1fr 120px 220px 120px 1fr;
+    gap:1rem;
+    align-items:center;
+
+}
+
+.bridge-arrow{
+
+    width:100%;
+    max-width:120px;
+    display:block;
+    margin:auto;
+
+}
+
+.bridge-centre{
+
+    text-align:center;
+}
+
+.bridge-centre img{
+
+    width:220px;
+    display:block;
+    margin:0 auto 1rem;
+}   
+
+.bridge-card{
+
+    background:#ffffff;
+    border:1px solid #E5E8EF;
+    border-radius:20px;
+    padding:1.75rem 2rem;
+    min-height:290px;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+
+    text-align:center;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.05);
+
+}
+
+.bridge-card img{
+
+    width:58px;
+    height:58px;
+    margin-bottom:1.5rem;
+
+}
+
+.bridge-card h3{
+
+    margin-bottom:1.25rem;
+}
+
+.bridge-card ul{
+
+    list-style:none;
+    padding:0;
+    margin:0;
+
+}
+
+.bridge-card li{
+
+    margin-bottom:.7rem;
+    text-align:center;
+
+}
+
+.bridge-centre{
+
+    text-align:center;
+}
+
+.bridge-centre img{
+
+    width:200px;
+}
+
+.bridge-centre p{
+
+    font-weight:600;
+    line-height:2;
+}
+
+.bridge-centre{
+
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+}
+
+.bridge-centre img{
+
+    width:170px;
+    position:relative;
+    z-index:2;
+    background:#fff;
+    padding:.10rem;
+}
+    right:0;
+    transform:translateY(-50%) rotate(45deg);
+
+.bridge-arrow{
+
+    width:400px;
+    display:block;
+    margin:auto;
+
+}
+
+.bridge-arrow{
+
+    width:400px;
+    display:block;
+    margin:auto;
+
+}
+
+@media(max-width:1100px){
+
+.bridge-arrow{
+
+    width:100%;
+    max-width:120px;
+    display:block;
+    margin:auto;
+
+}
+
+}
+
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width:1100px){
+
+.bridge-layout{
+
+    grid-template-columns:1fr;
+}
+
+.bridge-centre{
+
+    order:2;
+}
+
+}
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width:768px){
+
+.bridge-card{
+
+    padding:2rem;
+}
+
+}
+
+
+
+/* ==========================================
+   WHO WE WORK WITH
+========================================== */
+
+.who-we-work-with{
+
+    padding:5rem 0;
+
+}
+
+.sector-carousel{
+
+    position:relative;
+    overflow:hidden;
+
+}
+
+.carousel-track{
+
+    display:flex;
+    gap:2rem;
+    transition:.5s ease;
+
+}
+
+.sector-card{
+
+    flex:0 0 calc((100% - 4rem)/3);
+
+    background:#fff;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+    border:1px solid var(--border);
+
+}
+
+.sector-card img{
+
+    width:100%;
+    height:220px;
+
+    object-fit:cover;
+
+    display:block;
+
+}
+
+.sector-content{
+
+    padding:2rem;
+
+    text-align:center;
+
+}
+
+.sector-content h3{
+
+    margin-bottom:1rem;
+
+}
+
+.sector-content p{
+
+    margin:0;
+
+    line-height:1.7;
+
+}
+
+.carousel-btn{
+
+    position:absolute;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    width:52px;
+    height:52px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#fff;
+
+    color:var(--primary);
+
+    cursor:pointer;
+
+    box-shadow:0 6px 20px rgba(0,0,0,.18);
+
+    z-index:20;
+
+}
+
+.prev{
+
+    left:0;
+
+}
+
+.next{
+
+    right:0;
+
+}
+
+@media(max-width:1100px){
+
+.sector-card{
+
+    flex:0 0 calc((100% - 2rem)/2);
+
+}
+
+}
+
+@media(max-width:768px){
+
+.sector-card{
+
+    flex:0 0 100%;
+
+}
+
+}
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width:1100px){
+
+.sector-carousel{
+
+    grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width:768px){
+
+.sector-carousel{
+
+    grid-template-columns:1fr;
+}
+
+}
+
+
+/* ==========================================
+   MEET THE FOUNDER
+========================================== */
+
+.founder-section{
+
+    padding:6rem 0;
+}
+
+.founder-grid{
+
+    display:grid;
+    grid-template-columns:420px 1fr;
+    gap:5rem;
+    align-items:center;
+}
+
+.founder-image{
+
+    text-align:center;
+}
+
+.founder-image img{
+
+    width:100%;
+    max-width:420px;
+    display:block;
+    margin:auto;
+    border-radius:20px;
+}
+
+.founder-content h2{
+
+    margin-bottom:1rem;
+}
+
+.founder-content p{
+
+    max-width:650px;
+    margin-bottom:1.5rem;
+}
+
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width:1100px){
+
+.founder-grid{
+
+    grid-template-columns:1fr;
+    text-align:center;
+}
+
+.founder-content p{
+
+    max-width:none;
+}
+
+}
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width:768px){
+
+.founder-section{
+
+    padding:4rem 0;
+}
+
+.founder-grid{
+
+    gap:3rem;
+}
+
+.founder-image img{
+
+    max-width:320px;
+}
+
+}
+
+
+
+/* ==========================================
+   PURPOSE • VISION • VALUES • PROMISE
+========================================== */
+
+.principles-section{
+
+    padding:2rem 0;
+}
+
+.principles-grid{
+
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:2rem;
+    margin-top:4rem;
+}
+
+.principle-card{
+
+    background:#fff;
+    border:1px solid #E5E8EF;
+    border-radius:20px;
+    padding:2.25rem;
+    box-shadow:0 10px 30px rgba(0,0,0,.05);
+    transition:.3s;
+}
+
+.principle-card:hover{
+
+    transform:translateY(-6px);
+}
+
+.principle-card h3{
+
+    margin-bottom:1.25rem;
+}
+
+.principle-card p{
+
+    margin:0;
+}
+
+.principle-card ul{
+
+    margin:0;
+    padding-left:1.2rem;
+}
+
+.principle-card li{
+
+    margin-bottom:.75rem;
+}
+
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width:1100px){
+
+.principles-grid{
+
+    grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width:768px){
+
+.principles-grid{
+
+    grid-template-columns:1fr;
+}
+
+}
+
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width:1100px) {
+
+
+
+}
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width:768px) {
+
+
+
+}

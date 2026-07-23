@@ -1,0 +1,409 @@
+/* ==========================================
+   Meet The Data Matron
+   data-matron.css
+========================================== */
+
+
+/* ==========================================
+   PAGE DEFAULTS
+========================================== */
+
+.knowledge-hub-page section{
+
+    padding:1rem 0;
+
+}
+
+
+/* ==========================================
+   HERO
+========================================== */
+
+.knowledge-hero{
+
+    background:var(--white);
+
+}
+
+
+.knowledge-content .lead{
+
+    font-size:1.15rem;
+    font-weight:500;
+    color:var(--secondary);
+    margin-bottom:1.5rem;
+    line-height:1.8;
+
+}
+
+/* ==========================================
+   KNOWLEDGE HUB HERO IMAGE
+========================================== */
+
+.knowledge-hub-page .page-hero-image img {
+    width: 70%;
+    max-width: 420px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+
+/* ==========================================
+   TABLET
+========================================== */
+
+
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+
+
+/* ==========================================
+   FREE GUIDES
+========================================== */
+
+.free-guides{
+
+    background:var(--background-light);
+
+}
+
+.section-heading{
+
+    text-align:center;
+    max-width:700px;
+    margin:0 auto 3rem;
+
+}
+
+.section-heading h2{
+
+    margin-bottom:1rem;
+
+}
+
+.resource-grid{
+
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:2rem;
+
+}
+
+.resource-card{
+
+    background:var(--white);
+    border:1px solid var(--border);
+    border-radius:16px;
+    padding:2rem;
+    text-align:center;
+    transition:0.25s ease;
+    display:flex;
+    flex-direction:column;
+
+}
+
+.resource-card:hover{
+
+    transform:translateY(-4px);
+    box-shadow:0 12px 30px rgba(0,0,0,0.08);
+
+}
+
+.logo-tile img {
+
+    width:64px;
+    height:64px;
+    object-fit:contain;
+
+    margin:0;
+    display:block;
+
+}
+
+.resource-card h3{
+
+    margin-bottom:1rem;
+    font-size:1.1rem;
+
+}
+
+.resource-card p{
+
+    flex:1;
+    margin-bottom:1.75rem;
+    color:var(--text-light);
+
+}
+
+.resource-link{
+
+    color:var(--primary);
+    font-weight:600;
+    text-decoration:none;
+
+}
+
+.resource-link:hover{
+
+    color:var(--accent);
+
+}
+
+@media (max-width:1100px){
+
+    .resource-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+@media (max-width:768px){
+
+    .resource-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+
+
+/* ==========================================
+   RECOMMENDED READING
+========================================== */
+
+.recommended-reading{
+
+    background:var(--white);
+
+}
+
+
+
+/* ==========================================
+   FAQ
+========================================== */
+
+.faq-section{
+
+    background:var(--background-light);
+
+}
+
+.faq-accordion{
+
+    max-width:900px;
+    margin:0 auto;
+
+}
+
+.faq-item{
+
+    background:var(--white);
+    border:1px solid var(--border);
+    border-radius:12px;
+    margin-bottom:1rem;
+    overflow:hidden;
+
+}
+
+.faq-item summary{
+
+    list-style:none;
+    cursor:pointer;
+    padding:1.35rem 1.5rem;
+    font-weight:600;
+    color:var(--primary);
+    position:relative;
+    transition:0.2s ease;
+
+}
+
+.faq-item summary::-webkit-details-marker{
+
+    display:none;
+
+}
+
+.faq-item summary::after{
+
+    content:"+";
+    position:absolute;
+    right:1.5rem;
+    top:50%;
+    transform:translateY(-50%);
+    font-size:1.5rem;
+    font-weight:400;
+    transition:0.2s ease;
+
+}
+
+.faq-item[open] summary::after{
+
+    content:"−";
+
+}
+
+.faq-item summary:hover{
+
+    background:#f8fafc;
+
+}
+
+.faq-item p{
+
+    padding:0 1.5rem 1.5rem;
+    margin:0;
+    color:var(--text-light);
+    line-height:1.7;
+
+}
+
+.logo-tile {
+    width: 120px;
+    height: 90px;
+
+    margin: 0 auto 1.5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+
+    overflow: hidden;
+}
+
+.logo-tile img {
+    display: block;
+
+    max-width: 90%;
+    max-height: 90%;
+
+    width: auto;
+    height: auto;
+
+    margin: 0;
+    object-fit: contain;
+}
+
+
+
+/* ==========================================
+   CALL TO ACTION
+========================================== */
+
+.knowledge-cta{
+
+    background:var(--white);
+
+}
+
+.knowledge-cta .cta-panel{
+
+    background:linear-gradient(135deg,var(--primary),var(--secondary));
+    color:var(--white);
+    border-radius:20px;
+    padding:3rem;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:3rem;
+
+}
+
+.knowledge-cta .cta-content{
+
+    flex:1;
+
+}
+
+.knowledge-cta .cta-content h2{
+
+    color:var(--white);
+    margin-bottom:1rem;
+
+}
+
+.knowledge-cta .cta-content p{
+
+    color:rgba(255,255,255,0.9);
+    max-width:700px;
+    margin:0;
+
+}
+
+.knowledge-cta .cta-action{
+
+    flex-shrink:0;
+
+}
+
+.knowledge-cta .btn-primary{
+
+    white-space:nowrap;
+
+}
+
+@media (max-width:900px){
+
+    .knowledge-cta .cta-panel{
+
+        flex-direction:column;
+        text-align:center;
+
+    }
+
+}
+
+
+
+/* ==========================================
+   TECHNICAL CAPABILITY
+========================================== */
+
+
+
+/* ==========================================
+   PROFESSIONAL PROFILES
+========================================== */
+
+
+
+/* ==========================================
+   CALL TO ACTION
+========================================== */
+
+
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width:1100px) {
+
+
+
+}
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width:768px) {
+
+
+
+}
+

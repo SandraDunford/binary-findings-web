@@ -1,0 +1,544 @@
+/* ==========================================
+   SERVICES PAGE
+   services.css
+   Version 1.0
+========================================== */
+
+
+/* ==========================================
+   PAGE DEFAULTS
+========================================== */
+
+.services-page section{
+
+    padding:3rem 0;
+
+}
+
+.services-page section:nth-child(even) {
+
+    background: var(--background-light);
+
+}
+
+
+/* ==========================================
+   SHARED SECTION HEADING
+========================================== */
+
+.section-heading {
+
+    text-align: center;
+
+    max-width: 760px;
+
+    margin: 0 auto 4rem;
+
+}
+
+.section-heading h2 {
+
+    margin-bottom: 1rem;
+
+}
+
+.section-heading p {
+
+    font-size: var(--fs-lg);
+
+    color: var(--text-light);
+
+}
+
+.heading-underline {
+
+    width: 100px;
+
+    height: 4px;
+
+    background: var(--accent);
+
+    border-radius: 999px;
+
+    margin: 1.5rem auto 2rem;
+
+}
+
+
+/* ==========================================
+   SERVICES HERO
+========================================== */
+
+
+.intro-text {
+
+    font-size: 1.2rem;
+
+    color: var(--text-light);
+
+    margin-bottom: 2rem;
+
+    max-width: 650px;
+
+}
+
+
+/* ==========================================
+   CONSULTATION CARD
+========================================== */
+
+.consultation-card {
+
+    background: var(--white);
+
+    border-radius: var(--radius-lg);
+
+    padding: 2rem;
+
+    box-shadow: var(--shadow-md);
+
+    text-align: center;
+
+    transition: var(--transition);
+
+}
+
+.consultation-card:hover {
+
+    transform: translateY(-6px);
+
+    box-shadow: var(--shadow-lg);
+
+}
+
+.consultation-card img {
+
+    width: 140px;
+
+    margin: 0 auto 2rem;
+
+}
+
+.consultation-card h2 {
+
+    margin-bottom: 1.5rem;
+
+}
+
+.consultation-card p {
+
+    color: var(--text-light);
+
+    margin-bottom: 2rem;
+
+}
+
+.consultation-card .btn-primary {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+}
+
+
+/* ==========================================
+   DATA MATRON BANNER
+========================================== */
+
+.matron-banner {
+
+    padding: 2rem 0 3rem;
+
+}
+
+.matron-banner-content {
+
+    background: var(--white);
+
+    border-radius: var(--radius-lg);
+
+    box-shadow: var(--shadow-md);
+
+    display: grid;
+
+    grid-template-columns: 240px 1fr auto;
+
+    gap: 3rem;
+
+    align-items: center;
+
+    padding: 3rem;
+
+}
+
+.matron-photo img {
+
+    width: 220px;
+
+    border-radius: var(--radius-md);
+
+}
+
+.matron-text h2 {
+
+    margin-bottom: 1.5rem;
+
+}
+
+.matron-text p {
+
+    color: var(--text-light);
+
+    max-width: 700px;
+
+}
+
+.matron-button {
+
+    justify-self: end;
+
+}
+
+
+/* ==========================================
+   BUTTON IMPROVEMENTS
+========================================== */
+
+.matron-button .btn-secondary {
+
+    white-space: nowrap;
+
+}
+
+.consultation-card .btn-primary {
+
+    width: 100%;
+
+}
+
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width:1100px) {
+
+.matron-banner-content {
+
+    grid-template-columns: 1fr;
+
+    text-align: center;
+
+}
+
+.matron-photo {
+
+    justify-self: center;
+
+}
+
+.matron-button {
+
+    justify-self: center;
+
+}
+
+}
+
+@media (max-width:768px) {
+
+.consultation-card {
+
+    padding: 2rem;
+
+}
+
+.matron-banner-content {
+
+    padding: 2rem;
+
+}
+
+.section-heading {
+
+    margin-bottom: 3rem;
+
+}
+
+}
+
+/*=================================================
+SERVICES BY DOMAIN
+=================================================*/
+
+.domain-banner{
+    margin-top: -6rem;      /* Move image upwards */
+    text-align: center;
+}
+
+.domain-banner img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/*=================================================
+CROSS DOMAIN SERVICES
+=================================================*/
+
+.cross-domain{
+
+    padding:1rem 0;
+
+}
+
+.cross-domain-banner{
+
+    display:grid;
+
+    grid-template-columns:repeat(6,1fr);
+
+    background:#fff;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    box-shadow:var(--shadow-sm);
+
+    border:1px solid var(--border);
+
+}
+
+.cross-service{
+
+    padding:2.2rem 1.4rem;
+
+    text-align:center;
+
+    transition:.3s;
+
+    border-right:1px solid var(--border);
+
+}
+
+.cross-service:last-child{
+
+    border-right:none;
+
+}
+
+.cross-service:hover{
+
+    background:#fafbff;
+
+}
+
+.cross-service img{
+
+    width:52px;
+
+    height:52px;
+
+    margin-bottom:1.25rem;
+
+    color:var(--primary);
+
+}
+
+.cross-service h3{
+
+    margin-bottom:.75rem;
+
+    font-size:1.1rem;
+
+}
+
+.cross-service p{
+
+    font-size:.95rem;
+
+    line-height:1.55;
+
+    color:var(--text-light);
+
+    margin:0;
+
+}
+
+
+/*=================================================
+CTA PANEL
+=================================================*/
+
+.services-cta{
+
+    padding:3rem 0;
+
+}
+
+.cta-panel{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:3rem;
+
+    padding:3rem;
+
+    background:linear-gradient(135deg,#1F318C,#3047B3);
+
+    border-radius:20px;
+
+    box-shadow:var(--shadow-md);
+
+}
+
+.cta-text{
+
+    max-width:650px;
+
+}
+
+.cta-text h2{
+
+    color:#fff;
+
+    margin-bottom:1rem;
+
+}
+
+.cta-text p{
+
+    color:rgba(255,255,255,.88);
+
+    margin:0;
+
+}
+
+.cta-actions{
+
+    display:flex;
+
+    gap:1rem;
+
+    flex-shrink:0;
+
+}
+
+.cta-actions .btn-primary{
+
+    background:#fff;
+
+    color:var(--primary);
+
+}
+
+.cta-actions .btn-primary:hover{
+
+    background:var(--accent);
+
+    color:#fff;
+
+}
+
+.cta-actions .btn-secondary{
+
+    color:#fff;
+
+    border-color:#fff;
+
+}
+
+.cta-actions .btn-secondary:hover{
+
+    background:#fff;
+
+    color:var(--primary);
+
+}
+
+
+/*=================================================
+RESPONSIVE
+=================================================*/
+
+@media(max-width:1200px){
+
+.cross-domain-banner{
+
+    grid-template-columns:repeat(3,1fr);
+
+}
+
+.cross-service:nth-child(3){
+
+    border-right:none;
+
+}
+
+.cross-service:nth-child(-n+3){
+
+    border-bottom:1px solid var(--border);
+
+}
+
+}
+
+@media(max-width:900px){
+
+.cta-panel{
+
+    flex-direction:column;
+
+    text-align:center;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.cross-domain-banner{
+
+    grid-template-columns:1fr;
+
+}
+
+.cross-service{
+
+    border-right:none;
+
+    border-bottom:1px solid var(--border);
+
+}
+
+.cross-service:last-child{
+
+    border-bottom:none;
+
+}
+
+.cta-actions{
+
+    flex-direction:column;
+
+    width:100%;
+
+}
+
+.cta-actions a{
+
+    width:100%;
+
+    justify-content:center;
+
+}
+
+}
