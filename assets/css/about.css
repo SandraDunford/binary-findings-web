@@ -65,6 +65,32 @@
     gap:3rem;
 }
 
+.page-hero-image img{
+
+    max-width:220px;
+
+}
+
+.bridge-section{
+
+    padding:3rem 0;
+
+}
+
+.page-hero-content{
+
+    order:1;
+
+}
+
+.page-hero-image{
+
+    order:2;
+
+    margin-top:2rem;
+
+}
+
 }
 
 
@@ -232,17 +258,69 @@
    TABLET
 ========================================== */
 
-@media (max-width:1100px){
+@media (max-width:768px){
 
 .bridge-layout{
 
-    grid-template-columns:1fr;
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    gap:2rem;
+
+}
+
+.bridge-card{
+
+    width:100%;
+
+    max-width:320px;
+
+    min-height:auto;
+
+    padding:2rem;
+
 }
 
 .bridge-centre{
 
     order:2;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    gap:1rem;
+
+    padding:1rem 0;
+
 }
+
+.bridge-centre img{
+
+    width:120px;
+
+    height:auto;
+
+}
+
+.bridge-centre p{
+
+    font-size:1rem;
+    line-height:1.5;
+
+}
+
+.bridge-arrow{
+
+    display:none;
+
+}
+
 
 }
 
@@ -420,6 +498,18 @@
     grid-template-columns:1fr;
 }
 
+.sector-card img{
+
+    height:180px;
+
+}
+
+.principle-card{
+
+    padding:1.75rem;
+
+}
+
 }
 
 
@@ -499,12 +589,14 @@
 
 .founder-grid{
 
-    gap:3rem;
+    gap: 1.5em;
 }
 
 .founder-image img{
 
-    max-width:320px;
+    width:100%;
+    max-width:220px;
+
 }
 
 }
@@ -593,23 +685,3 @@
 }
 
 
-/* ==========================================
-   TABLET
-========================================== */
-
-@media (max-width:1100px) {
-
-
-
-}
-
-
-/* ==========================================
-   MOBILE
-========================================== */
-
-@media (max-width:768px) {
-
-
-
-}
