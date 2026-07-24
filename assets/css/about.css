@@ -215,14 +215,13 @@
 
 .bridge-centre img{
 
-    width:170px;
+    width:300px;
     position:relative;
     z-index:2;
     background:#fff;
-    padding:.10rem;
+    padding:.2rem;
 }
-    right:0;
-    transform:translateY(-50%) rotate(45deg);
+   
 
 .bridge-arrow{
 
