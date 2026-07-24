@@ -270,23 +270,17 @@ img {
 
 }
 
-.header-grid {
-
-    display: grid;
-
-    grid-template-columns: 360px 1fr auto;
-
-    align-items: center;
-
-    gap: 3rem;
-
-    min-height: 100px;
-
+.header-grid{
+    display:grid;
+    grid-template-columns:auto 1fr auto;
+    align-items:center;
+    gap:.5rem;
+    min-height:150px;
 }
 
 .logo img {
 
-    width: 250px;
+    width: 500px;
 
     height: auto;
 
