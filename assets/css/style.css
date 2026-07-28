@@ -556,7 +556,7 @@ FOOTER
 
     display: grid;
 
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(5,1fr);
 
     gap: 3rem;
 
@@ -581,17 +581,12 @@ FOOTER
 }
 
 .footer-bottom {
-
+    width: 100%;
+    margin-top: 50px;
+    padding-top: 25px;
+    border-top: 1px solid #ddd;
     text-align: center;
-
-    padding: 1.5rem;
-
-    border-top: 1px solid #e5e7eb;
-
-    font-size: .9rem;
-
-    color: var(--text-light);
-
+    grid-column: 1 / -1;
 }
 
 .footer-column a {

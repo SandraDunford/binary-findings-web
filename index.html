@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/home.css">
 
+    <link rel="stylesheet" href="assets/css/cookie-consent.css">
+
 </head>
 
 <body>
@@ -231,7 +233,7 @@ FOOTER
 
         <div class="footer-column">
 
-            <h3>Binary Findings™</h3>
+            <h3>Binary Findings</h3>
 
             <p>Specialist data services for health and beyond.</p>
 
@@ -299,19 +301,33 @@ FOOTER
             </p>
 
             <p>
-                <a href="pages/terms.html">Terms & Conditions</a>
+                <a href="pages/terms.html">Terms &amp; Conditions</a>
                    
             </p>
 
             <p>
-                <a href="pages/cookie-policy.html">
+                <a href="pages/cookies.html">
                     Cookie Policy
                 </a>
             </p>
 
         </div>
 
-    </div>
+        <div class="footer-column">
+            
+            <h3>Cookie Preference</h3>
+
+            <p>
+
+                <a href="#" id="cookie-preferences-link">
+                    Cookie Preferences
+                </a>
+
+            </p>
+
+        </div>
+
+        </div>
 
     <div class="footer-bottom">
 
@@ -327,6 +343,104 @@ FOOTER
 
 <script src="assets/javascript/navigation.js"></script>
 
+
+<!-- ==========================================
+Cookie Consent Banner
+========================================== -->
+
+<div id="cookie-banner" class="cookie-banner hidden">
+
+    <div class="cookie-content">
+
+        <h3>We use cookies</h3>
+
+        <p>
+            We use essential cookies to keep this website working.
+            With your consent, we'd also like to use analytics cookies to
+            understand how visitors use our website so we can continue to
+            improve our content and services.
+        </p>
+
+        <div class="cookie-buttons">
+
+            <button id="accept-cookies" class="btn-primary">
+                Accept
+            </button>
+
+            <button id="manage-cookies" class="btn-secondary">
+                Manage Preferences
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- ==========================================
+Cookie Preferences Modal
+========================================== -->
+
+<div id="cookie-modal" class="cookie-modal hidden">
+
+    <div class="cookie-modal-content">
+
+        <h2>Cookie Preferences</h2>
+
+        <p class="cookie-intro">
+            You can choose whether to allow analytics cookies. Essential
+            cookies are always enabled because they are required for the
+            website to function correctly.
+        </p>
+
+        <!-- Analytics Cookies -->
+
+        <div class="cookie-option">
+
+            <label class="cookie-label">
+
+                <input
+                    type="checkbox"
+                    id="analytics-consent"
+                    checked>
+                    
+                <span>Analytics Cookies</span>
+
+            </label>
+
+            <p>
+                Help us understand how visitors use our website so we can
+                improve our content and services. Information is collected
+                anonymously.
+            </p>
+
+        </div>
+        
+        <!-- Essential Cookies -->
+
+        <div class="cookie-option">
+
+            <strong> Essential Cookies (Always Active)</strong>
+
+            <p>
+                Required for the website to function correctly.
+            </p>
+
+        </div>
+
+        <div class="cookie-buttons">
+
+            <button id="accept-preferences" class="btn-primary">
+                Accept
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="assets/javascript/site-preferences.js"></script>
 
 </body>
 
