@@ -2,7 +2,10 @@
    Binary Findings Cookie Preferences
 ========================================== */
 
+const STORAGE_KEY = "bf_cookie_preferences";
+
 document.addEventListener("DOMContentLoaded", () => {
+    console.log("1. DOM loaded");
 
     // --------------------------------------
     // Get page elements
@@ -24,9 +27,12 @@ document.addEventListener("DOMContentLoaded", () => {
     // Restore saved preference
     // --------------------------------------
 
-    const savedPreference = localStorage.getItem("bf_cookie_preferences");
+    const savedPreference = localStorage.getItem(STORAGE_KEY);
+    console.log("2. Saved preference:", savedPreference);
 
     if (savedPreference) {
+
+        console.log("3. Existing preference found");
 
         const settings = JSON.parse(savedPreference);
 
@@ -37,6 +43,8 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
     } else {
+
+        console.log("4. Showing banner");
 
         // No saved choice
         banner.classList.remove("hidden");
@@ -113,11 +121,8 @@ document.addEventListener("DOMContentLoaded", () => {
         };
 
         localStorage.setItem(
-
-            "bf_cookie_preferences",
-
+            STORAGE_KEY,
             JSON.stringify(preferences)
-
         );
 
         banner.classList.add("hidden");
