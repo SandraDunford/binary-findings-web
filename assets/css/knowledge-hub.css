@@ -407,3 +407,66 @@
 
 }
 
+/* ==========================================
+   POLICIES
+========================================== */
+
+.policies {
+    padding: 5rem 0;
+}
+
+.policy-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+
+    gap: 2rem;
+
+    margin-top: 3rem;
+
+}
+
+.policy-card {
+
+    background: #ffffff;
+
+    border: 1px solid #d9e2ec;
+
+    border-radius: 12px;
+
+    padding: 2rem;
+
+    text-decoration: none;
+
+    transition: all 0.25s ease;
+
+    box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+
+}
+
+.policy-card:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+
+    border-color: var(--accent-amber);
+
+}
+
+.policy-card h3 {
+
+    color: var(--primary-blue);
+
+    margin-bottom: 1rem;
+
+}
+
+.policy-card p {
+
+    color: #555;
+
+    line-height: 1.6;
+
+}
