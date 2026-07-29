@@ -893,104 +893,127 @@
 </section>
 
 <!-- ==========================================
-     FOOTER
+FOOTER
 ========================================== -->
 
 <footer class="site-footer">
 
-<div class="container footer-grid">
+    <div class="container footer-grid">
 
-<div class="footer-column">
+        <div class="footer-column">
 
-<h3>Binary Findings</h3>
+            <h3>Binary Findings</h3>
 
-<p>
+            <p>Specialist data services for health and beyond.</p>
 
-Specialist data services for healthcare and beyond.
+            <p> • Meaning • Insight • Knowledge • Impact
+            </p>
 
-</p>
+        </div>
 
-<p>
+        <div class="footer-column">
 
-Meaning • Insight • Knowledge • Impact
+            <h3>Contact</h3>
 
-</p>
+            <p>
+                <a href="mailto:enquiries@binaryfindings.co.uk">
+                enquiries@binaryfindings.co.uk
+            </a>
+        </p>
 
-</div>
+        <p>
+            <a href="https://www.binaryfindings.co.uk" target="_blank" rel="noopener">
+            www.binaryfindings.co.uk
+            </a>
+        </p>
 
-<div class="footer-column">
+        <p>+44 7337 510634</p>
 
-<h3>Contact</h3>
+        </div>
 
-<p>
+        <div class="footer-column">
 
-<a href="mailto:enquiries@binaryfindings.co.uk">
+            <h3>Connect</h3>
 
-enquiries@binaryfindings.co.uk
+            <p>
+                <a href="https://www.linkedin.com/in/thedatamatron/" target="_blank" rel="noopener">
+                    LinkedIn
+                </a>
+            </p>
 
-</a>
+            <p>
+                <a href="https://github.com/SandraDunford" target="_blank" rel="noopener">
+                GitHub
+                </a>
+            </p>
 
-</p>
+            <p>
+                <a href="mailto:enquiries@binaryfindings.co.uk">
+                    Email
+                </a>
+            </p>
 
-<p>
+            <p>
+                <a href="https://orcid.org/my-orcid?orcid=0000-0002-6245-2454" target="_blank" rel="noopener">
+                    ORCID
+                </a>
+            </p>
 
-<a href="https://www.binaryfindings.co.uk">
+        </div>
 
-www.binaryfindings.co.uk
+        <div class="footer-column">
 
-</a>
+            <h3>Legal</h3>
 
-</p>
+            <p>
+                <a href="pages/privacy-policy.html">Privacy Policy</a> 
+            </p>
 
-<p>
+            <p>
+                <a href="pages/terms.html">Terms &amp; Conditions</a>
+                   
+            </p>
 
-+44 7337 510634
+            <p>
+                <a href="pages/cookies.html">
+                    Cookie Policy
+                </a>
+            </p>
 
-</p>
+        </div>
 
-</div>
+        <div class="footer-column">
+            
+            <h3>Cookie Preference</h3>
 
-<div class="footer-column">
+            <p>
 
-<h3>Connect</h3>
+                <a href="#" id="cookie-preferences-link">
+                    Cookie Preferences
+                </a>
 
-<p>LinkedIn</p>
+            </p>
 
-<p>GitHub</p>
+        </div>
 
-<p>Email</p>
+        </div>
 
-</div>
+    <div class="footer-bottom">
 
-<div class="footer-column">
+        <p>
 
-<h3>Legal</h3>
+            © 2026 Binary Findings. All rights reserved.
 
-<p>Privacy Policy</p>
+        </p>
 
-<p>Terms & Conditions</p>
-
-<p>Cookie Policy</p>
-
-</div>
-
-</div>
-
-<div class="footer-bottom">
-
-<p>
-
-© 2026 Binary Findings. All rights reserved.
-
-</p>
-
-</div>
+    </div>
 
 </footer>
 
-<script src="../assets/javascript/navigation.js"></script>
+<!-- ==========================================
+Cookie Consent Banner
+========================================== -->
 
-<!-- Cookie Consent Banner -->
 <div id="cookie-banner" class="cookie-banner hidden">
 
     <div class="cookie-content">
@@ -999,22 +1022,18 @@ www.binaryfindings.co.uk
 
         <p>
             We use essential cookies to keep this website working.
-            With your consent, we'd also like to use analytics cookies
-            to understand how visitors use our website and improve our
-            content and services.
+            With your consent, we'd also like to use analytics cookies to
+            understand how visitors use our website so we can continue to
+            improve our content and services.
         </p>
 
         <div class="cookie-buttons">
 
             <button id="accept-cookies" class="btn-primary">
-                Accept All
+                Accept
             </button>
 
-            <button id="reject-cookies" class="btn-secondary">
-                Reject Non-Essential
-            </button>
-
-            <button id="manage-cookies" class="btn-outline">
+            <button id="manage-cookies" class="btn-secondary">
                 Manage Preferences
             </button>
 
@@ -1024,71 +1043,47 @@ www.binaryfindings.co.uk
 
 </div>
 
-<!-- Cookie Preferences -->
+<!-- ==========================================
+Cookie Preferences Modal
+========================================== -->
+
 <div id="cookie-modal" class="cookie-modal hidden">
 
     <div class="cookie-modal-content">
 
         <h2>Cookie Preferences</h2>
 
-        <p>
-            Choose which cookies you would like us to use.
+        <p class="cookie-intro">
+            You can choose whether to allow analytics cookies. Essential
+            cookies are always enabled because they are required for the
+            website to function correctly.
         </p>
 
+        <!-- Analytics Cookies -->
+
         <div class="cookie-option">
 
-            <label>
+            <label class="cookie-label">
 
-                <input type="checkbox" checked disabled>
-
-                <strong>Essential Cookies</strong>
+                <input
+                    type="checkbox"
+                    id="analytics-consent"
+                    checked>
+                    
+                <span>Analytics Cookies</span>
 
             </label>
 
             <p>
-                Required for the website to function correctly.
+                Help us understand how visitors use our website so we can
+                improve our content and services. Information is collected
+                anonymously.
             </p>
 
         </div>
 
-        <div class="cookie-option">
-
-            <label>
-
-                <input type="checkbox" id="analytics-consent">
-
-                <strong>Analytics Cookies</strong>
-
-            </label>
-
-            <p>
-                Help us improve our website by collecting anonymous
-                usage information.
-            </p>
-
-        </div>
-
-        <div class="cookie-buttons">
-
-            <button id="save-preferences" class="btn-primary">
-                Save Preferences
-            </button>
-
-            <button id="accept-all-modal" class="btn-secondary">
-                Accept All
-            </button>
-
-            <button id="reject-all-modal" class="btn-outline">
-                Reject Non-Essential
-            </button>
-
-        </div>
-
-    </div>
-
-</div>
-
-<script src="assets/js/site-preferences.js"></script>
+<script src="../assets/javascript/site-preferences.js"></script>
+<script src="../assets/javascript/navigation.js"></script>
 
 </body>
 
