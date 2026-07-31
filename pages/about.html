@@ -30,6 +30,10 @@
 
     <link rel="stylesheet" href="../assets/css/cookie-consent.css">
 
+<!-- =========================================
+    organisation SCHEMA
+==========================================-->
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -49,6 +53,19 @@
       "founder": {
         "@id": "https://binaryfindings.co.uk/#person"
       },
+
+      "knowsAbout": [
+        "Data Engineering",
+        "Analytics Engineering",
+        "Healthcare Analytics",
+        "Healthcare Informatics",
+        "Research Data",
+        "Data Governance",
+        "Business Intelligence",
+        "Clinical Audit",
+        "Quality Improvement",
+        "Data Strategy"
+        ]
       "sameAs": [
         "https://www.linkedin.com/company/binary-findings/",
         "https://www.fiverr.com/s/kLdpGGW
@@ -114,6 +131,56 @@
     }
 
   ]
+}
+</script>
+
+<!-- =========================================
+    BREADCRUMBS SCHEMA
+==========================================-->
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement":[
+    {
+      "@type":"ListItem",
+      "position":1,
+      "name":"Home",
+      "item":"https://binaryfindings.co.uk/"
+    },
+    {
+      "@type":"ListItem",
+      "position":2,
+      "name":"About",
+      "item":"https://binaryfindings.co.uk/pages/about.html"
+    }
+  ]
+}
+</script>
+
+<!-- ==========================================
+    WebPage schema
+========================================== -->
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"AboutPage",
+  "@id":"https://binaryfindings.co.uk/pages/about.html#webpage",
+  "url":"https://binaryfindings.co.uk/pages/about.html",
+  "name":"About Binary Findings",
+  "description":"Learn about Binary Findings, our mission, values and specialist expertise in healthcare and data consultancy.",
+  "isPartOf":{
+    "@id":"https://binaryfindings.co.uk/#website"
+  },
+  "about":{
+    "@id":"https://binaryfindings.co.uk/#organization"
+  },
+  "mainEntity":{
+    "@id":"https://binaryfindings.co.uk/#organization"
+  },
+  "inLanguage":"en-GB"
 }
 </script>
 
