@@ -688,7 +688,7 @@
 ================================================== */
 
 .legal-content {
-    padding: 4rem 0 5rem;
+    padding:1rem 0 5rem;
 }
 
 .legal-content .container {
@@ -696,7 +696,7 @@
 }
 
 .legal-content h2 {
-    margin-top: 3rem;
+    margin-top: .5rem;
     margin-bottom: 1rem;
     color: var(--primary-blue);
     font-size: 2rem;
