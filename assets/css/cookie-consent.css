@@ -91,9 +91,11 @@ Buttons
 
 .btn-primary{
 
-    background:#d89c2b;
+    background:#2f3e9e;
 
     color:#ffffff;
+
+    border:2px solid #d97706;
 
 }
 
