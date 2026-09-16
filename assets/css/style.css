@@ -687,8 +687,10 @@ MOBILE
 
     position:relative;
 
+}
+
     /*=================================================
-HOME HERO
+HOME HERO - MOBILE
 =================================================*/
 
 .hero{
@@ -697,14 +699,16 @@ HOME HERO
 
 }
 
-.hero-grid{
-
-    grid-template-columns:1fr;
-
+.hero-container{
+    flex-direction:column;
+    align-items:center;
     gap:2rem;
-
     text-align:center;
+}
 
+.hero-content{
+    width:100%;
+    min-width:0;
 }
 
 .hero-content{
@@ -1028,8 +1032,6 @@ section{
     align-items:center;
 
     font-size:2rem;
-
-}
 
 }
 
